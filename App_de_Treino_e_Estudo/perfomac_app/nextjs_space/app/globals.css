@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 240 15% 7%;
+    --foreground: 220 20% 95%;
+    --card: 240 12% 10%;
+    --card-foreground: 220 20% 95%;
+    --popover: 240 12% 10%;
+    --popover-foreground: 220 20% 95%;
+    --primary: 262 83% 58%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 240 10% 16%;
+    --secondary-foreground: 220 20% 90%;
+    --muted: 240 10% 14%;
+    --muted-foreground: 220 10% 55%;
+    --accent: 262 60% 45%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 240 10% 18%;
+    --input: 240 10% 18%;
+    --ring: 262 83% 58%;
+    --radius: 0.625rem;
+    --shadow-sm: 0 1px 3px 0 rgba(0,0,0,0.3);
+    --shadow-md: 0 4px 12px 0 rgba(0,0,0,0.4);
+    --shadow-lg: 0 10px 30px 0 rgba(0,0,0,0.5);
+    --duration-fast: 150ms;
+    --duration-normal: 250ms;
+    --duration-slow: 350ms;
+  }
+  .dark {
+    --background: 240 15% 7%;
+    --foreground: 220 20% 95%;
+    --card: 240 12% 10%;
+    --card-foreground: 220 20% 95%;
+    --popover: 240 12% 10%;
+    --popover-foreground: 220 20% 95%;
+    --primary: 262 83% 58%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 240 10% 16%;
+    --secondary-foreground: 220 20% 90%;
+    --muted: 240 10% 14%;
+    --muted-foreground: 220 10% 55%;
+    --accent: 262 60% 45%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 240 10% 18%;
+    --input: 240 10% 18%;
+    --ring: 262 83% 58%;
+  }
+}
+
+@layer base {
+  * { @apply border-border; }
+  body { @apply bg-background text-foreground; }
+}
+
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: hsl(240 15% 7%); }
+::-webkit-scrollbar-thumb { background: hsl(262 83% 58% / 0.4); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: hsl(262 83% 58% / 0.6); }
+
+.neon-glow { box-shadow: 0 0 15px hsl(262 83% 58% / 0.3), 0 0 30px hsl(262 83% 58% / 0.1); }
+.neon-text { text-shadow: 0 0 10px hsl(262 83% 58% / 0.5); }
